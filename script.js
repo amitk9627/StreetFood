@@ -15,6 +15,8 @@ function closeNav() {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 7,
+    // loop:false,
+   
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

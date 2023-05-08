@@ -21,14 +21,19 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+}
+@media (max-width:450px){
+  .header {
+    height: 80vh;
+  }
+ 
 }
 
 /* bar */
 div.container {
  cursor: pointer;
  display: none;
-
- 
 }
 
 .bar1,
@@ -41,13 +46,11 @@ div.container {
   transition: 0.4s;
 }
 
-
-
 /* logo & p tag */
 .logo {
 
   text-align: center;
-  /* padding:259px auto; */
+  
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -58,11 +61,11 @@ div.container {
 .logo .logo-text {
   font-size: 5rem;
   color: #fff;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .logo p {
-  margin-top: 1px;
+  /* margin-top: 1px; */
   color: #fff;
   font-size: 2rem;
 }
@@ -70,35 +73,19 @@ div.container {
 input {
   border-radius: 15px;
   font-size: 1.2rem;
-  padding: 20px;
+  /* padding: 20px; */
   border: none;
-  margin-top: 20px;
+  /* margin-top: 10px; */
   width: 100%;
   height: 35px;
 }
 
 @media screen and (max-width:600px) {
 
-  .logo {
-
-    text-align: center;
-    /* padding:259px auto; */
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-  }
-
   .logo .logo-text {
     font-size: 3rem;
-    color: #fff;
-    /* padding: 2px; */
   }
-
   .logo p {
-
-    color: #fff;
     font-size: 1.6rem;
   }
 
@@ -106,9 +93,7 @@ input {
     border-radius: 8px;
     font-size: 1rem;
     padding: 5px;
-    border: none;
     margin-top: -10px;
-    width: 100%;
     height: 26px;
   }
 }
@@ -176,20 +161,22 @@ li .dropdown-content {
   min-width: 160px;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
+ 
 }
 
 li .dropdown-content a {
   float: none;
-  color: black;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: rgb(67, 67, 67);
   padding: 5px 16px;
   display: block;
   text-align: left;
+  border: none;
 }
 
 li .dropdown-content a:hover {
   background-color: #8d8a8a;
-  border: none;
-  border-radius: 0;
 }
 
 
@@ -297,33 +284,31 @@ li .dropdown:hover .dropdown-content {
 .swipe {
   /* margin: 35px 0; */
   padding: 30px 0;
-  background-color: #fff;
+  background: #e6e6e6;
 }
 
 .swipe div h1 {
   text-align: center;
   padding-bottom: 10px;
   font-size: 3rem;
- 
-  
 }
 
 .swipe div h1 b {
   color: rgb(255, 166, 0);
-  /* text-decoration: underline; */
+  
 
 }
 
 .swiper {
-
+ 
   width: auto;
   height: 100%;
-  padding: 10px;
+  padding: 30px;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  /* font-size: 18px; */
   background: #fff;
   display: flex;
   justify-content: center;
@@ -534,7 +519,7 @@ p.description{
  
   display: flex;
   padding-top:1.5rem;
-  
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
@@ -542,7 +527,7 @@ p.description{
   display: flex;
  
  
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-direction: column;
   /* flex-wrap: wrap; */
 }
@@ -556,10 +541,31 @@ p.description{
 .footerBottom a:hover{
   color: white;
 }
+/* copyright */
+.copyright{
+  margin-top: 50px;
+  text-align: center;
+}
 
 @media (max-width:815px) {
+  .footer {
+ 
+    background-color: #000;
+    padding: 3rem 4rem;
+    color: #fff; 
+  }  
+  .footerTop{
+   
+    flex-direction:column;
+  }
+  .footerTop h1{
+    text-align: center;
+    letter-spacing: 3px;
+  }
   .footerBottom div{
-    display: block;
-    width: 100%;
+    
+    align-items: center;
+    width: 50%;
+   
   }
 }
