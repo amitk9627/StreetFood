@@ -14,7 +14,7 @@ function closeNav() {
 }
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 5,
+    spaceBetween: 7,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -30,15 +30,15 @@ var swiper = new Swiper(".mySwiper", {
       },
       640: {
         slidesPerView: 4,
-        spaceBetween: 7,
+        spaceBetween: 9,
       },
       768: {
         slidesPerView: 5,
-        spaceBetween: 10,
+        spaceBetween: 12,
       },
       1024: {
         slidesPerView: 6,
-        spaceBetween: 13,
+        spaceBetween: 15,
       },
     },
   });
