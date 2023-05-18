@@ -21,15 +21,11 @@
 <body>
   <section class="header">
     <header>
-      <div class="container">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <nav>
+      <div class="humburger"><i class="fa-solid fa-bars" id="bars" onclick="openclose()"></i></div>
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="#">Home</a></li>
-          <li>
+          <!-- <li>
             <div class="dropdown">
               <button class="dropbtn">Dropdown
                 <i class="fa fa-caret-down"></i>
@@ -44,11 +40,11 @@
                 <a href="#">Drinks</a>
               </div>
             </div>
-          </li>
-          <li><a href="#">Contact us</a></li>
+          </li> -->
+          <li><a href="#contact">Contact us</a></li>
 
           <li><a href="#">about</a></li>
-          <li><a href="#">faq</a></li>
+          
         </ul>
       </nav>
     </header>
@@ -127,46 +123,22 @@
 
 
 
-  <!-- carousel -->
-  <section id="testimonials">
-    <div id="testimonials-image" class="carousel slide" data-bs-touch="false">
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <h2>i love this webste they provide on time.</h2>
-          <img class="testimonial-image" src="./review_image/WIN_20221025_12_04_47_Pro.jpg" alt="dog-profile">
-          <em>Pebbles, New York</em>
-        </div>
-        <div class="carousel-item ">
-          <h2 class="testimonial-text">I was on vacation and to help celebrate national cheeseburger day, 
-            Excellent food & service!</h2>
-          <img class="testimonial-image" src="./review_image/WIN_20221025_12_04_47_Pro.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em>
-        </div>
-        <div class="carousel-item ">
-          <h2 class="testimonial-text">i love this webste they provide on time.</h2>
-          <img class="testimonial-image" src="./review_image/WIN_20221025_12_04_47_Pro.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em>
-        </div>
-        <div class="carousel-item ">
-          <h2 class="testimonial-text"> It was really delicious 
-            taste with great quality, we found nothing bad about this hotel.</h2>
-          <img class="testimonial-image" src="./review_image/WIN_20221025_12_04_47_Pro.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em>
-
-        </div>
-
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <div>
+      <div class="contact-form">
+        <h1>Contact us</h1>
+        <form>
+          <input type="text" placeholder="Enter Your Name" name="name" required/>
+          <input type="email"  placeholder="Enter Your Email" name="email" required/>
+          <textarea placeholder="enter your message" required></textarea>
+          <button>Submit</button>
+        </form>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-image" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-image" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
   </section>
+  
  
 
   <!-- footer -->
